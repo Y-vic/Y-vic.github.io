@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#人工智能与机器学习" class="md-skip">
+        <a href="#人工智能" class="md-skip">
           跳转至
         </a>
       
@@ -1147,6 +1147,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#谓词逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      谓词逻辑
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2084,6 +2093,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#谓词逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      谓词逻辑
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2120,7 +2138,7 @@
   
 
 
-<h1 id="人工智能与机器学习">人工智能与机器学习<a class="headerlink" href="#人工智能与机器学习" title="Permanent link"></a></h1>
+<h1 id="人工智能">人工智能<a class="headerlink" href="#人工智能" title="Permanent link"></a></h1>
 <h2 id="绪论">绪论<a class="headerlink" href="#绪论" title="Permanent link"></a></h2>
 <h3 id="四类人工智能的定义">四类人工智能的定义<a class="headerlink" href="#四类人工智能的定义" title="Permanent link"></a></h3>
 <table>
@@ -2510,6 +2528,7 @@ $$
 <p>文字：原子命题及其否定</p>
 <p>互补文字：一个文字是另一个文字的否定</p>
 <p>子句：文字的析取式<span class="arithmatex">\(\or\)</span></p>
+<p>子句集：n个子句的合取<span class="arithmatex">\(\and\)</span></p>
 <p>归并：去除文字的多余副本</p>
 <p><strong>语法：</strong>（按照优先级列出）</p>
 <p>$\neg非 \qquad \and合取 \qquad \or析取 \qquad \Rightarrow蕴含  \qquad \Leftrightarrow当且仅当  $</p>
@@ -2535,6 +2554,49 @@ $$
 <p>消去合取词：</p>
 <p>$\frac{\alpha \wedge \beta }{\alpha } $</p>
 <p>逻辑系统的单调性：只要在知识库里面发现了合适的前提，就可以应用推理规则，但与知识库的其余内容无关</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107123239655.png" alt="image-20240107123239655" style="zoom:67%;" /></p>
+<p><img alt="image-20240107123255105" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107123255105.png" /></p>
+<p><img alt="image-20240107123502651" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107123502651.png" /></p>
+<p>命题逻辑的每个语句逻辑上等价于文字析取式的合取式CNF</p>
+<p>如何证明<span class="arithmatex">\(KB \models \alpha ?\)</span></p>
+<p><img alt="image-20240107133846687" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107133846687.png" /></p>
+<p>受限子句 限定子句 确定子句:指恰好只含有一个正文字的析取式</p>
+<p>霍恩子句:至多只有一个正文字的文字析取式</p>
+<p>没有正文字的析取式也是 Horn 子句，被称为 目标子句 </p>
+<h3 id="谓词逻辑">谓词逻辑<a class="headerlink" href="#谓词逻辑" title="Permanent link"></a></h3>
+<p>命题逻辑的局限：</p>
+<ul>
+<li>无法把不同事物间的共同特征表达出来。</li>
+<li>无法把所描述的客观事物的结构及逻辑特征反映出来。</li>
+</ul>
+<p>命题内部逻辑结构的分解：</p>
+<p>把判断中的具体内容抽出，称为个体；剩下的判断即为谓词</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107172113043.png" alt="image-20240107172113043" style="zoom: 50%;" /></p>
+<p>一阶逻辑的结构：论域、个体、个体间的关系，作用于个体的函数</p>
+<p>在一阶逻辑中，被研究对象构成的非空集称为论域 ；论域中的每个元素称为 个体（对象），通常用小写字母表示</p>
+<p><strong>谓词</strong>：一阶形式语言中用于指称论域中 个体的性质 或者 个体之间关系 的形式符号，大写字母</p>
+<ul>
+<li>
+<p>一元谓词：个体的性质；</p>
+</li>
+<li>
+<p>二元谓词 多元谓词 ：个体的关系</p>
+</li>
+<li>个体的位置：空位；具体化：构成意义完整的语句</li>
+<li>空位的数目-谓词的元数-n元谓词</li>
+</ul>
+<p><strong>函数</strong>： 为了表达个体之间的对应关系，引入数学中函数概念和记法。小写字母</p>
+<p>x 的父亲 father（张三）</p>
+<p>在 n 元谓词 P(x1 X2 ，，…xn) 中，若每个个体均为 常量、变元 或 函数
+则称它为<strong>一阶谓词</strong>。如果某个个体本身又是一个一阶谓词，则称它为<strong>二阶谓词</strong>，如此类推。</p>
+<p><strong>量词</strong>：全称量词、存在量词</p>
+<p>约束变量、量词辖域、自由变量</p>
+<p><img alt="image-20240107191247769" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107191247769.png" /></p>
+<p><img alt="image-20240107191532141" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107191532141.png" /></p>
+<p><img alt="image-20240107192510113" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107192510113.png" /></p>
+<p><img alt="image-20240107192520815" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107192520815.png" /></p>
+<p><img alt="image-20240107192530282" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107192530282.png" /></p>
+<p><img alt="image-20240107192646029" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107192646029.png" /></p>
 
 
 
