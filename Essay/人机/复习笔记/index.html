@@ -1,0 +1,2603 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="vic">
+      
+      
+      
+        <link rel="prev" href="../%E9%BB%91%E7%99%BD%E6%A3%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">
+      
+      
+        <link rel="next" href="../../%E4%BF%A1%E5%AE%89/ARP%E6%94%BB%E5%87%BB/">
+      
+      
+      <link rel="icon" href="../../../img/moon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.3">
+    
+    
+      
+        <title>复习笔记 - vic's Web</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.50c56a3b.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/link.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.css">
+    
+      <link rel="stylesheet" href="../../../ckplayer/css/ckplayer.css">
+    
+      <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#人工智能与机器学习" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="vic&#39;s Web" class="md-header__button md-logo" aria-label="vic's Web" data-md-component="logo">
+      
+  <img src="../../../img/logo.jpg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            vic's Web
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              复习笔记
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo"  aria-label="切换至夜间模式"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="切换至夜间模式" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="切换至日间模式"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="切换至日间模式" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/y-vic/y-vic.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    y-vic.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E5%8F%A3%E7%BD%A9%E4%BD%A9%E6%88%B4%E6%A3%80%E6%B5%8B/" class="md-tabs__link">
+          
+  
+    
+  
+  课程
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Letter/luvletter/sqrzszyz/" class="md-tabs__link">
+          
+  
+    
+  
+  情书
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="vic&#39;s Web" class="md-nav__button md-logo" aria-label="vic's Web" data-md-component="logo">
+      
+  <img src="../../../img/logo.jpg" alt="logo">
+
+    </a>
+    vic's Web
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/y-vic/y-vic.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    y-vic.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    主页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    课程
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    人机
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            人机
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%A3%E7%BD%A9%E4%BD%A9%E6%88%B4%E6%A3%80%E6%B5%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    口罩佩戴检测
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E5%8F%8C%E7%9B%B8%E9%9A%9C%E7%A2%8D%E6%A3%80%E6%B5%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    双相障碍检测
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%87%AA%E5%8A%A8%E8%B5%B0%E8%BF%B7%E5%AE%AB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    机器人走迷宫
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E4%BD%9C%E5%AE%B6%E9%A3%8E%E6%A0%BC%E8%AF%86%E5%88%AB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    作家风格识别
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E9%BB%91%E7%99%BD%E6%A3%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    黑白棋
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    复习笔记
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    复习笔记
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#绪论" class="md-nav__link">
+    <span class="md-ellipsis">
+      绪论
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="绪论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#四类人工智能的定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      四类人工智能的定义
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#智能体-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体 agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="智能体 agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体与环境" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体与环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体函数智能体程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体函数&amp;智能体程序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#理性智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性智能体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#理性的判断任务环境peas" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性的判断：任务环境PEAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体的分类" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体的分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#习题" class="md-nav__link">
+    <span class="md-ellipsis">
+      习题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#问题求解智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题求解智能体
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题求解智能体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#问题求解的步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题求解的步骤
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#良定义问题及其解" class="md-nav__link">
+    <span class="md-ellipsis">
+      良定义问题及其解
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#问题类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="搜索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#搜索的主要过程三要素" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索的主要过程（三要素）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#搜索算法的性能度量" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索算法的性能度量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#广度优先搜索bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      广度优先搜索BFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一致代价搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      一致代价搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#深度优先搜索dfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      深度优先搜索DFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dfs的衍生" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS的衍生
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS的衍生">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#深度受限搜索dls" class="md-nav__link">
+    <span class="md-ellipsis">
+      深度受限搜索(DLS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#回溯搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      回溯搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#迭代加深搜索ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      迭代加深搜索(IDS)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bfs的衍生双相搜索-bs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BFS的衍生：双相搜索 BS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#算法性能对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      算法性能对比
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#避免重复状态的方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      避免重复状态的方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#习题_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      习题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#最好优先搜索bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      最好优先搜索BFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最好优先搜索BFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#最好优先搜索bfs介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      最好优先搜索BFS介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#贪婪最好优先搜索fnhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      贪婪最好优先搜索:\(f(n)=h(n)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a搜索-fngnhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(A^*\)搜索 \(f(n)=g(n)+h(n)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a算法的拓展迭代深入a算法ida" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(A^*\)算法的拓展:迭代深入\(A^*\)算法(\(IDA^*\))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#递归最好优先搜索rbfs-这个地方没看懂" class="md-nav__link">
+    <span class="md-ellipsis">
+      递归最好优先搜索(RBFS) 这个地方没看懂
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#有效分支因子b和启发式函数的优劣" class="md-nav__link">
+    <span class="md-ellipsis">
+      有效分支因子\(b^*\)和启发式函数的优劣
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#局部搜索算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      局部搜索算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="局部搜索算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#爬山法" class="md-nav__link">
+    <span class="md-ellipsis">
+      爬山法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#模拟退火算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      模拟退火算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#遗传算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      遗传算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作业" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对抗搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      对抗搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#极小极大算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      极小极大算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-beta剪枝" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\alpha-\beta\)剪枝
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截断搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      截断搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#概率博弈" class="md-nav__link">
+    <span class="md-ellipsis">
+      概率博弈
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#不完全信息博弈" class="md-nav__link">
+    <span class="md-ellipsis">
+      不完全信息博弈
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作业_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#基本搜索算法总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本搜索算法总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#逻辑智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      逻辑智能体
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="逻辑智能体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基于知识的智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      基于知识的智能体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#命题逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#命题逻辑的推理" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题逻辑的推理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#推导和证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      推导和证明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    信安
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            信安
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E4%BF%A1%E5%AE%89/ARP%E6%94%BB%E5%87%BB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ARP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    情书
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            情书
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/sqrzszyz/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    朱生豪与宋清如
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(021)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(031)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(036)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(046)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(053)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Letter/luvletter/zhushenghao6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    《朱生豪情书全集摘录》(055)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#绪论" class="md-nav__link">
+    <span class="md-ellipsis">
+      绪论
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="绪论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#四类人工智能的定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      四类人工智能的定义
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#智能体-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体 agent
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="智能体 agent">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#定义" class="md-nav__link">
+    <span class="md-ellipsis">
+      定义
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体与环境" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体与环境
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体函数智能体程序" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体函数&amp;智能体程序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#理性智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性智能体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#理性的判断任务环境peas" class="md-nav__link">
+    <span class="md-ellipsis">
+      理性的判断：任务环境PEAS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#智能体的分类" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体的分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#习题" class="md-nav__link">
+    <span class="md-ellipsis">
+      习题
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#问题求解智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题求解智能体
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="问题求解智能体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#问题求解的步骤" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题求解的步骤
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#良定义问题及其解" class="md-nav__link">
+    <span class="md-ellipsis">
+      良定义问题及其解
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#问题类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      问题类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="搜索">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#搜索的主要过程三要素" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索的主要过程（三要素）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#搜索算法的性能度量" class="md-nav__link">
+    <span class="md-ellipsis">
+      搜索算法的性能度量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#广度优先搜索bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      广度优先搜索BFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一致代价搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      一致代价搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#深度优先搜索dfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      深度优先搜索DFS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dfs的衍生" class="md-nav__link">
+    <span class="md-ellipsis">
+      DFS的衍生
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="DFS的衍生">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#深度受限搜索dls" class="md-nav__link">
+    <span class="md-ellipsis">
+      深度受限搜索(DLS)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#回溯搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      回溯搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#迭代加深搜索ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      迭代加深搜索(IDS)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bfs的衍生双相搜索-bs" class="md-nav__link">
+    <span class="md-ellipsis">
+      BFS的衍生：双相搜索 BS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#算法性能对比" class="md-nav__link">
+    <span class="md-ellipsis">
+      算法性能对比
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#避免重复状态的方法" class="md-nav__link">
+    <span class="md-ellipsis">
+      避免重复状态的方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#习题_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      习题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#最好优先搜索bfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      最好优先搜索BFS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="最好优先搜索BFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#最好优先搜索bfs介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      最好优先搜索BFS介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#贪婪最好优先搜索fnhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      贪婪最好优先搜索:\(f(n)=h(n)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a搜索-fngnhn" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(A^*\)搜索 \(f(n)=g(n)+h(n)\)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a算法的拓展迭代深入a算法ida" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(A^*\)算法的拓展:迭代深入\(A^*\)算法(\(IDA^*\))
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#递归最好优先搜索rbfs-这个地方没看懂" class="md-nav__link">
+    <span class="md-ellipsis">
+      递归最好优先搜索(RBFS) 这个地方没看懂
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#有效分支因子b和启发式函数的优劣" class="md-nav__link">
+    <span class="md-ellipsis">
+      有效分支因子\(b^*\)和启发式函数的优劣
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#局部搜索算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      局部搜索算法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="局部搜索算法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#爬山法" class="md-nav__link">
+    <span class="md-ellipsis">
+      爬山法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#模拟退火算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      模拟退火算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#遗传算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      遗传算法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作业" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#对抗搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      对抗搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#极小极大算法" class="md-nav__link">
+    <span class="md-ellipsis">
+      极小极大算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alpha-beta剪枝" class="md-nav__link">
+    <span class="md-ellipsis">
+      \(\alpha-\beta\)剪枝
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#截断搜索" class="md-nav__link">
+    <span class="md-ellipsis">
+      截断搜索
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#概率博弈" class="md-nav__link">
+    <span class="md-ellipsis">
+      概率博弈
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#不完全信息博弈" class="md-nav__link">
+    <span class="md-ellipsis">
+      不完全信息博弈
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作业_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      作业
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#基本搜索算法总结" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本搜索算法总结
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#逻辑智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      逻辑智能体
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="逻辑智能体">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基于知识的智能体" class="md-nav__link">
+    <span class="md-ellipsis">
+      基于知识的智能体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#命题逻辑" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题逻辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#命题逻辑的推理" class="md-nav__link">
+    <span class="md-ellipsis">
+      命题逻辑的推理
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#推导和证明" class="md-nav__link">
+    <span class="md-ellipsis">
+      推导和证明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/y-vic/y-vic.github.io/edit/main/docs/Essay/人机/复习笔记.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/y-vic/y-vic.github.io/raw/main/docs/Essay/人机/复习笔记.md" title="查看本页的源代码" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="人工智能与机器学习">人工智能与机器学习<a class="headerlink" href="#人工智能与机器学习" title="Permanent link"></a></h1>
+<h2 id="绪论">绪论<a class="headerlink" href="#绪论" title="Permanent link"></a></h2>
+<h3 id="四类人工智能的定义">四类人工智能的定义<a class="headerlink" href="#四类人工智能的定义" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>根据与人类表现的逼真度衡量成功</th>
+<th>根据“合理性”指标衡量成功</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>关注思维过程与推理</td>
+<td>像人一样思考</td>
+<td>合理地思考</td>
+</tr>
+<tr>
+<td>强调行为</td>
+<td>像人一样行动</td>
+<td>合理地行动</td>
+</tr>
+</tbody>
+</table>
+<h2 id="智能体-agent">智能体 agent<a class="headerlink" href="#智能体-agent" title="Permanent link"></a></h2>
+<h3 id="定义"><strong>定义</strong><a class="headerlink" href="#定义" title="Permanent link"></a></h3>
+<p>能够感知和动作的实体，即一个从感知序列到动作的函数
+$$
+f:P^* \to A
+$$
+计算能力有限使得<strong>最完美的智能体</strong>不可实现，只能针对给定机器资源设计<strong>最好的程序</strong></p>
+<p>任何独立的能够思想并可以同环境交互的实体都可以抽象为智能体</p>
+<h3 id="智能体与环境">智能体与环境<a class="headerlink" href="#智能体与环境" title="Permanent link"></a></h3>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106142439752.png" alt="image-20240106142439752" style="zoom:67%;" /></p>
+<p>通过传感器感知环境，通过执行器影响环境</p>
+<p><strong>感知信息</strong>：表示任何时刻Agent的感知输入。
+<strong>感知序列</strong>：Agent收到的所有输入数据的完整历史。
+<strong>Agent函数</strong>：将任意给定<strong>感知序列</strong>映射到Agent的<strong>动作</strong>。可以描述Agent的行为。</p>
+<p><em>Agent在任何时刻的行动选择，取决于到该时刻为止的整个感知序列</em></p>
+<h3 id="智能体函数智能体程序">智能体函数&amp;智能体程序<a class="headerlink" href="#智能体函数智能体程序" title="Permanent link"></a></h3>
+<p><strong>Agent函数：</strong>从外部反映了Agent的特性，是一个抽象的数学表示</p>
+<p><strong>Agent程序：</strong>从Agent内部来看，Agent函数是通过Agent程序实现的，是Agent函数在某种物理体系上的具体实现</p>
+<p>Agent函数可以通过列表的形式表现：感知序列<span class="arithmatex">\(\to\)</span>行动</p>
+<h3 id="理性智能体">理性智能体<a class="headerlink" href="#理性智能体" title="Permanent link"></a></h3>
+<p><strong>定义：对于每一个可能的感知序列，根据已知的感知序列和内建的先验知识，理性Agent选择能使性能指标的期望值最大化的动作。</strong></p>
+<p><strong>性能度量：</strong>通常由理性Agent的设计者给出，根据实际在所处的环境中<strong>希望得到的结果</strong>来设计度量，而不是根据智能体<strong>应该表现的行为</strong>。</p>
+<ul>
+<li>当把Agent置于一个环境中后，它将针对收到的感知信息产生动作序列。</li>
+<li>该动作序列引起环境历经一个状态序列。</li>
+<li>如果该状态序列是想要的，则Agent的性能良好。</li>
+</ul>
+<h3 id="理性的判断任务环境peas">理性的判断：任务环境PEAS<a class="headerlink" href="#理性的判断任务环境peas" title="Permanent link"></a></h3>
+<p>（1）定义成功标准的性能度量 performance
+（2）Agent对环境的先验知识 environment
+（3）Agent可以执行的动作 actuators
+（4）Agent的感知序列 sensors</p>
+<p>e.g.自动驾驶出租车的任务：</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106144234551.png" alt="image-20240106144234551" style="zoom: 50%;" /></p>
+<p>真实的世界是部分可观，随机的，延续式的，动态的，连续的，多智能体的</p>
+<h3 id="智能体的分类">智能体的分类<a class="headerlink" href="#智能体的分类" title="Permanent link"></a></h3>
+<p>四种基本智能体的结构类型：</p>
+<ul>
+<li>简单反射型</li>
+</ul>
+<p>基于当前感知选择行动，忽略感知历史</p>
+<p><img alt="image-20240106145028731" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145028731.png" /></p>
+<ul>
+<li>基于模型的简单反射型</li>
+</ul>
+<p>使用内部模型记录世界的当前状态，按反射型智能体方式选择行动</p>
+<p><img alt="image-20240106145055563" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145055563.png" /></p>
+<ul>
+<li>基于目标型</li>
+</ul>
+<p>智能体追踪记录世界的状态、要达到的目标，并选择导致达成目标的行动。既追踪记录世界的状态，又记录要达到的目标集</p>
+<p><img alt="image-20240106145133386" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145133386.png" /></p>
+<ul>
+<li>基于效用型</li>
+</ul>
+<p>更普适的度量：效用函数</p>
+<p><img alt="image-20240106145239953" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145239953.png" /></p>
+<p><strong>学习智能体</strong></p>
+<p><img alt="image-20240106145430867" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145430867.png" /></p>
+<p>智能体的学习可以看做为<strong>智能体的每个组件的修改过程</strong>，修改使得各组件与能得到的反馈信息更加一致，从而改进智能体的总体性能</p>
+<p>如何运转：</p>
+<p><img alt="image-20240106145552784" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145552784.png" /></p>
+<p>继续以自动驾驶为例：</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106145640771.png" alt="image-20240106145640771" style="zoom: 50%;" /></p>
+<h3 id="习题">习题<a class="headerlink" href="#习题" title="Permanent link"></a></h3>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106172437144.png" alt="image-20240106172437144" style="zoom: 60%;" /></p>
+<h2 id="问题求解智能体">问题求解智能体<a class="headerlink" href="#问题求解智能体" title="Permanent link"></a></h2>
+<h3 id="问题求解的步骤">问题求解的步骤<a class="headerlink" href="#问题求解的步骤" title="Permanent link"></a></h3>
+<ul>
+<li>目标形式化</li>
+<li>问题形式化</li>
+<li>搜索</li>
+<li>执行</li>
+</ul>
+<p><img alt="image-20240106152527616" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106152527616.png" /></p>
+<h3 id="良定义问题及其解">良定义问题及其解<a class="headerlink" href="#良定义问题及其解" title="Permanent link"></a></h3>
+<p>一个问题由5个组成部分形式化描述：
+<strong>初始状态，可能行动，转移模型</strong>
+<strong>目标测试函数，路径耗散（代价、成本）函数。</strong>
+问题的环境用状态空间表示。状态空间中从初始状态到达目标状态的路径是一个解。</p>
+<p>e.g.罗马尼亚度假问题：</p>
+<p><img alt="image-20240106153157881" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153157881.png" /></p>
+<p>良定义问题形式化：</p>
+<p><img alt="image-20240106153040047" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153040047.png" /></p>
+<p>思维导图：</p>
+<p><img alt="image-20240106153311266" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153311266.png" /></p>
+<p>e.g.吸尘器问题：</p>
+<p><img alt="image-20240106153525511" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153525511.png" /></p>
+<p>e.g.八数码问题：</p>
+<p><img alt="image-20240106153626954" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153626954.png" /></p>
+<p>e.g.八皇后问题：</p>
+<p><img alt="image-20240106153821737" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106153821737.png" /></p>
+<h3 id="问题类型">问题类型<a class="headerlink" href="#问题类型" title="Permanent link"></a></h3>
+<ul>
+<li>单一状态问题：确定的动作后果，完全可观
+  智能体确切知道自己将处于什么状态；解是一个序列</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106155152048.png" alt="image-20240106155152048" style="zoom:67%;" /></p>
+<ul>
+<li>构造问题：确定的动作后果、部分可观</li>
+</ul>
+<p>智能体不知道自己处于什么状态；解（如果存在的话）是一个序列</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106155231207.png" alt="image-20240106155231207" style="zoom:67%;" /></p>
+<ul>
+<li>偶然事件类型：不确定的动作后果、部分可观</li>
+</ul>
+<p>但是，感知提供关于目前状态的最新信息；解是树或是一种策略。</p>
+<p><img alt="image-20240106155435186" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106155435186.png" /></p>
+<ul>
+<li>探索性问题：对状态空间一无所知</li>
+</ul>
+<h3 id="搜索">搜索<a class="headerlink" href="#搜索" title="Permanent link"></a></h3>
+<h4 id="搜索的主要过程三要素">搜索的主要过程（三要素）<a class="headerlink" href="#搜索的主要过程三要素" title="Permanent link"></a></h4>
+<ul>
+<li><strong>状态空间</strong>（state space）：</li>
+</ul>
+<p>从初始或目的状态出发，并将它作为当前状态。</p>
+<ul>
+<li><strong>后继函数</strong>（successor function with actions and costs）：</li>
+</ul>
+<p>扫描操作算子集，将适用当前状态的一些操作算子作用于当前状态而得到新的状态，并建立指向其父结点的指针。</p>
+<ul>
+<li><strong>初始状态和目标测试</strong>（start state and goal test）：</li>
+</ul>
+<p>解是一个行动序列，将初始状态转换成目标状态</p>
+<h4 id="搜索算法的性能度量">搜索算法的性能度量<a class="headerlink" href="#搜索算法的性能度量" title="Permanent link"></a></h4>
+<p>通过以下四种途径来判断算法的性能：</p>
+<p>• 完备性：有解时能否保证找到解
+• 最优性：这个搜索策略是否能找到最优解
+• 时间复杂度：根据搜索过程中产生的节点数目来度量，即找到解所花的时间
+• 空间复杂度：在执行搜索的过程中需要的内存多少</p>
+<p>问题的难度（复杂度）常常转化为状态空间图的大小：</p>
+<p>• b：branching factor 分支因子，节点后继的最大个数
+• d：solution depth 最浅目标节点的深度（最优解所在的深度）
+• m：maximum depth 状态空间中所有路径的最大长度（整个图的最大深度）   可能是∞</p>
+<p>时间复杂性：搜索所产生的节点个数
+空间复杂性：存储的最大节点个数</p>
+<p><strong>算法的有效性（效率）</strong>：</p>
+<p>可以只考虑搜索耗散(代价函数,cost),通常取决于时间复杂度</p>
+<p>也可以考虑总耗散，即时间复杂度+空间复杂度</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106161522283.png" alt="image-20240106161522283" style="zoom:120%;" /></p>
+<h3 id="广度优先搜索bfs">广度优先搜索BFS<a class="headerlink" href="#广度优先搜索bfs" title="Permanent link"></a></h3>
+<p><img alt="image-20240106163647205" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106163647205.png" /></p>
+<p>运行时间：<span class="arithmatex">\(O(V+E)\)</span></p>
+<p><img alt="image-20240106163758824" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106163758824.png" /></p>
+<h3 id="一致代价搜索">一致代价搜索<a class="headerlink" href="#一致代价搜索" title="Permanent link"></a></h3>
+<p>对任何单步代价函数都是最优的算法</p>
+<p>总是搜索总成本最小的节点</p>
+<p>e.g.：</p>
+<p><img alt="image-20240106165142001" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106165142001.png" /></p>
+<p>一致代价搜索的性能；</p>
+<ul>
+<li><strong>完备性</strong>：一致代价搜索对解路径的步数并不关心，只关心路径总代价。所以，如果存在零代价行动就可能陷入死循环。如果每一步的代价都大于等于某个小的正常数，那么一致代价搜索是完备的。从算法中也可以看到，一致搜索将地图中相关联的路径都入了队列，不存在遗漏的点线，所以如果目标结点在图中，最终总会找到一条路径到达目标结点。</li>
+<li><strong>最优性</strong>：一致代价搜索是最优的。一致代价搜索目标检测应用于结点被选择扩展时，而不是在结点生成的时候，因为第一个生成的目标结点可能在次优路径上。而且如果边缘中的结点有更好的路径到达该结点那么会引入一个测试。简单来说，优先队列保证了每一个出队扩展的结点都是最优的，如此得到了一个最优的路径。</li>
+<li><strong>时间和空间复杂度</strong>∶一致代价搜索由路径代价而不是深度来导引。引入C 表示最优解的代价，假设每个行动的代价至少为e，那么最坏情况下，算法的时间和空间复杂度为<span class="arithmatex">\(O(b\cdot(1+\frac{C}{e}))\)</span></li>
+</ul>
+<p>有可能陷入无限循环（遇到具有能返回同一状态的零耗散行动的节点时）;如果规定每一步的耗散都大等于某个小的正值常数，那么就能保证完备性和最优性。</p>
+<p>代价一致搜索由路径的耗散引导不是由深度引导，其复杂度与b和最优解的耗散值有关。</p>
+<h3 id="深度优先搜索dfs">深度优先搜索DFS<a class="headerlink" href="#深度优先搜索dfs" title="Permanent link"></a></h3>
+<p>DFS的性能：</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106165637963.png" alt="image-20240106165637963" style="zoom: 67%;" /></p>
+<ul>
+<li>非最优</li>
+<li>非完备</li>
+<li>对内存的需求很少</li>
+<li>在最坏情况下，深度优先搜索所生成的节点数是<span class="arithmatex">\(O(bm)\)</span></li>
+<li>有可能错误地选择一条分支而且沿着一条很长的路径（甚至是无限）走下去。</li>
+</ul>
+<h3 id="dfs的衍生">DFS的衍生<a class="headerlink" href="#dfs的衍生" title="Permanent link"></a></h3>
+<h4 id="深度受限搜索dls">深度受限搜索(DLS)<a class="headerlink" href="#深度受限搜索dls" title="Permanent link"></a></h4>
+<p><img alt="image-20240106170032808" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106170032808.png" /></p>
+<h4 id="回溯搜索">回溯搜索<a class="headerlink" href="#回溯搜索" title="Permanent link"></a></h4>
+<p><img alt="image-20240106170215558" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106170215558.png" /></p>
+<h4 id="迭代加深搜索ids">迭代加深搜索(IDS)<a class="headerlink" href="#迭代加深搜索ids" title="Permanent link"></a></h4>
+<p>IDS就是在DLS的基础上，不断的将常数l扩大，从而增加搜索深度。</p>
+<p>迭代加深的深度优先搜索：其经常和深度优先搜索结合使用以确定最好的深度界限，其基本原理是：不断增加深度限制，从0开始，接下来为1、2、3,...，依此类推，直到找到目标。显然，当深度界限达到d时，即最浅的目标结点深度，就能找到目标结点。</p>
+<p>IDS的性能：</p>
+<p><img alt="image-20240106170448763" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106170448763.png" /></p>
+<h3 id="bfs的衍生双相搜索-bs">BFS的衍生：双相搜索 BS<a class="headerlink" href="#bfs的衍生双相搜索-bs" title="Permanent link"></a></h3>
+<p>BS的假设是我们不仅可以从初始节点出发，同时还可以从目标节点出发，从而实现双向的搜索。BS的内部往往是由BFS实现的，如果从初始节点和从目标节点的搜索都是BFS，可以保证算法的最优。</p>
+<p>实际上，BS就是将BFS画的半径为d的一个大圆，换成半径为d/2的两个小圆。</p>
+<p>双向搜索的实现方式是：将目标测试替换为检查两个方向的搜索边缘结点集是否相交。</p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106170952407.png" alt="image-20240106170952407" style="zoom:80%;" /></p>
+<h3 id="算法性能对比">算法性能对比<a class="headerlink" href="#算法性能对比" title="Permanent link"></a></h3>
+<table>
+<thead>
+<tr>
+<th>评判标准</th>
+<th>广搜BFS</th>
+<th>深搜DFS</th>
+<th>有限深搜DLS</th>
+<th>迭代加深搜索IDS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>完备性</td>
+<td><span class="arithmatex">\(yes\)</span></td>
+<td><span class="arithmatex">\(yes\)</span></td>
+<td><span class="arithmatex">\(yes,if\ l\ge d\)</span></td>
+<td><span class="arithmatex">\(yes\)</span></td>
+</tr>
+<tr>
+<td>时间复杂度</td>
+<td><span class="arithmatex">\(O(b^{d+1})\)</span></td>
+<td><span class="arithmatex">\(O(b^m)\)</span></td>
+<td><span class="arithmatex">\(O(b^l)\)</span></td>
+<td><span class="arithmatex">\(O(b^d)\)</span></td>
+</tr>
+<tr>
+<td>空间复杂度</td>
+<td><span class="arithmatex">\(O(b^{d})\)</span></td>
+<td><span class="arithmatex">\(O(b\cdot m)\)</span></td>
+<td><span class="arithmatex">\(O(b\cdot l)\)</span></td>
+<td><span class="arithmatex">\(O(b\cdot d)\)</span></td>
+</tr>
+<tr>
+<td>最优性</td>
+<td><span class="arithmatex">\(yes\)</span></td>
+<td><span class="arithmatex">\(no\)</span></td>
+<td><span class="arithmatex">\(no\)</span></td>
+<td><span class="arithmatex">\(yes\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="避免重复状态的方法">避免重复状态的方法<a class="headerlink" href="#避免重复状态的方法" title="Permanent link"></a></h3>
+<p><img alt="image-20240106172246053" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106172246053.png" /></p>
+<h3 id="习题_1">习题<a class="headerlink" href="#习题_1" title="Permanent link"></a></h3>
+<p><img alt="image-20240106172346325" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106172346325.png" /></p>
+<h3 id="最好优先搜索bfs">最好优先搜索BFS<a class="headerlink" href="#最好优先搜索bfs" title="Permanent link"></a></h3>
+<h4 id="最好优先搜索bfs介绍">最好优先搜索BFS介绍<a class="headerlink" href="#最好优先搜索bfs介绍" title="Permanent link"></a></h4>
+<p>基于广搜，与一致代价搜索类似，但是核心思想不同</p>
+<p>最佳优先搜索：使用一个评价函数<span class="arithmatex">\(f(n)\)</span>给每个节点估计他们的希望值。每次搜索时优先扩展最有希望的未扩展节点（评估值最小的节点）</p>
+<p>一致代价搜索：使用一个路径耗散函数$g(n) $扩展路径消耗最低的节点,总是搜索总成本最小的节点</p>
+<p>启发函数h(n)= 从节点n代表的状态到目标状态的路径耗散的最小估计值</p>
+<h4 id="贪婪最好优先搜索fnhn">贪婪最好优先搜索:<span class="arithmatex">\(f(n)=h(n)\)</span><a class="headerlink" href="#贪婪最好优先搜索fnhn" title="Permanent link"></a></h4>
+<p>每次搜索会拓展使得<span class="arithmatex">\(h(n)\)</span>最小的节点，类似于DFS</p>
+<p>算法性能：</p>
+<p><img alt="image-20240106200640402" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106200640402.png" /></p>
+<p>该算法的问题：</p>
+<p><img alt="image-20240106200753157" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106200753157.png" /></p>
+<p>算法性能</p>
+<p><img alt="image-20240106200855770" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106200855770.png" /></p>
+<h4 id="a搜索-fngnhn"><span class="arithmatex">\(A^*\)</span>搜索 <span class="arithmatex">\(f(n)=g(n)+h(n)\)</span><a class="headerlink" href="#a搜索-fngnhn" title="Permanent link"></a></h4>
+<p>g(n)从初始节点到节点n的实际路径耗散</p>
+<p>h(n)从节点n到目标节点的最小路径耗散估计</p>
+<p>f(n)从初始节点经过节点n到达目标节点的最小路径耗散估计</p>
+<p>如果h从不高估（<span class="arithmatex">\(\le\)</span>）到达目标的最低路径耗散值，则称h是可容纳启发式</p>
+<p>如果h是可容许的，那么<span class="arithmatex">\(A^*\)</span>算法是<strong>最优的</strong></p>
+<p>算法性能：</p>
+<p><img alt="image-20240106202849478" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106202849478.png" /></p>
+<p>但<span class="arithmatex">\(A^*\)</span>对存储空间要求很高</p>
+<h4 id="a算法的拓展迭代深入a算法ida"><span class="arithmatex">\(A^*\)</span>算法的拓展:迭代深入<span class="arithmatex">\(A^*\)</span>算法(<span class="arithmatex">\(IDA^*\)</span>)<a class="headerlink" href="#a算法的拓展迭代深入a算法ida" title="Permanent link"></a></h4>
+<p>截断值是超过上一次迭代截断值的节点中最小的f耗散值</p>
+<ul>
+<li>不需要判重，不需要排序</li>
+<li>空间需求减少</li>
+</ul>
+<h4 id="递归最好优先搜索rbfs-这个地方没看懂">递归最好优先搜索(RBFS) 这个地方没看懂<a class="headerlink" href="#递归最好优先搜索rbfs-这个地方没看懂" title="Permanent link"></a></h4>
+<p>尝试模拟标准的最佳优先搜索而只需线性空间。
+1. 记录当前节点的祖先可得到的最佳可替换路径的f值。
+2. 如果当前的f值超过了这个限制，则递归将转回到替换路径。
+3. 向上回溯改变f值到它的孩子的最佳f 值
+4. 重复扩展这个上个节点，因为仍有可能存在较优解。</p>
+<p>如果h是可采纳的，则有最优性</p>
+<p>空间复杂度：<span class="arithmatex">\(O(bd)\)</span></p>
+<p>时间复杂度：取决于h的精度和最佳路径变换的次数</p>
+<p><img alt="image-20240106205428868" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106205428868.png" /></p>
+<p><img alt="image-20240106205442227" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106205442227.png" /></p>
+<p><img alt="image-20240106205454396" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106205454396.png" /></p>
+<h4 id="有效分支因子b和启发式函数的优劣">有效分支因子<span class="arithmatex">\(b^*\)</span>和启发式函数的优劣<a class="headerlink" href="#有效分支因子b和启发式函数的优劣" title="Permanent link"></a></h4>
+<p><img alt="image-20240106205846238" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106205846238.png" /></p>
+<p><img alt="image-20240106210128339" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210128339.png" /></p>
+<h3 id="局部搜索算法">局部搜索算法<a class="headerlink" href="#局部搜索算法" title="Permanent link"></a></h3>
+<h4 id="爬山法">爬山法<a class="headerlink" href="#爬山法" title="Permanent link"></a></h4>
+<p><img alt="image-20240106210402647" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210402647.png" /></p>
+<p><img alt="image-20240106210420474" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210420474.png" /></p>
+<p><strong>解决局部最优问题：</strong></p>
+<p>每次并不一定选择邻域内最优的点，而是依据一定的概率，从邻域内选择一个点，指标函数优的点，被选中的概率比较大，而指标函数差的点，被选中的概率比较小。</p>
+<p><strong>解决步长问题：</strong></p>
+<p><img alt="image-20240106210547509" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210547509.png" /></p>
+<p>变步长：</p>
+<p><img alt="image-20240106210605640" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210605640.png" /></p>
+<p><strong>解决起始点问题：</strong></p>
+<p><img alt="image-20240106210702053" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210702053.png" /></p>
+<p>随机的生成一些初始点，从每个初始点出发进行搜索，找到各自的最优解。再从这些最优解中选择一个最好的结果作为最终的结果。</p>
+<p><strong>爬山法衍生</strong></p>
+<p><img alt="image-20240106210811547" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210811547.png" /></p>
+<h4 id="模拟退火算法">模拟退火算法<a class="headerlink" href="#模拟退火算法" title="Permanent link"></a></h4>
+<p><img alt="image-20240106210945107" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106210945107.png" /></p>
+<h4 id="遗传算法">遗传算法<a class="headerlink" href="#遗传算法" title="Permanent link"></a></h4>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106211014645.png" alt="image-20240106211014645" style="zoom:50%;" /></p>
+<h3 id="作业">作业<a class="headerlink" href="#作业" title="Permanent link"></a></h3>
+<p><img alt="image-20240106211107648" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106211107648.png" /></p>
+<h3 id="对抗搜索">对抗搜索<a class="headerlink" href="#对抗搜索" title="Permanent link"></a></h3>
+<h3 id="极小极大算法">极小极大算法<a class="headerlink" href="#极小极大算法" title="Permanent link"></a></h3>
+<p><img alt="image-20240106212343065" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106212343065.png" /></p>
+<p><img alt="image-20240106212353653" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106212353653.png" /></p>
+<p><img alt="image-20240106212404461" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106212404461.png" /></p>
+<p><img alt="image-20240106212413159" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106212413159.png" /></p>
+<ul>
+<li>完备性：yes，if树是有限的</li>
+<li>时间复杂度：<span class="arithmatex">\(O(b^m )\)</span></li>
+<li>空间复杂度：<span class="arithmatex">\(O(b\cdot m)\)</span></li>
+<li>最优性：yes，if 对手也是最优的</li>
+</ul>
+<h3 id="alpha-beta剪枝"><span class="arithmatex">\(\alpha-\beta\)</span>剪枝<a class="headerlink" href="#alpha-beta剪枝" title="Permanent link"></a></h3>
+<p><span class="arithmatex">\(\alpha-\beta\)</span>剪枝是对<span class="arithmatex">\(MinMax\)</span>方法的优化，它们产生的结果是完全相同的，只不过运行效率不一样</p>
+<p><img alt="image-20240106212939139" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106212939139.png" /></p>
+<p><img alt="image-20240106213053532" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213053532.png" /></p>
+<p>重新考虑两层博弈树。让我们再次全面观察最优决策的计算过程，这一次仔细注意过程中在每个节点我们所知道的信息。下图显示了每一步的解释。</p>
+<p><img alt="image-20240106213429638" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213429638.png" /></p>
+<p><img alt="image-20240106213442177" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213442177.png" /></p>
+<p><img alt="image-20240106213500106" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213500106.png" /></p>
+<p><img alt="image-20240106213509711" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213509711.png" /></p>
+<p><img alt="image-20240106213524916" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213524916.png" /></p>
+<p><img alt="image-20240106213531931" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213531931.png" /></p>
+<p><img alt="image-20240106213540122" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213540122.png" /></p>
+<p><img alt="image-20240106213547774" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213547774.png" /></p>
+<p><img alt="image-20240106213558547" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213558547.png" /></p>
+<p><img alt="image-20240106213606793" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213606793.png" /></p>
+<p><img alt="image-20240106213614908" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213614908.png" /></p>
+<p><img alt="image-20240106213622802" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213622802.png" /></p>
+<h3 id="截断搜索">截断搜索<a class="headerlink" href="#截断搜索" title="Permanent link"></a></h3>
+<p>截断搜索与极小极大搜索相同，除了：</p>
+<ul>
+<li>用 <em>是否到达截断处</em> 代替 <em>是否到达终盘</em></li>
+<li>用 <em>评估值</em> 代替 <em>效用值</em></li>
+</ul>
+<h3 id="概率博弈">概率博弈<a class="headerlink" href="#概率博弈" title="Permanent link"></a></h3>
+<p>极小极大值   <span class="arithmatex">\(\to\)</span> 期望极小极大值</p>
+<h3 id="不完全信息博弈">不完全信息博弈<a class="headerlink" href="#不完全信息博弈" title="Permanent link"></a></h3>
+<p>在不完全信息博弈里，参与人并不完全清楚有关博弈的一些信息。大多数纸牌游戏是不完全信息博弈。在桥牌里，你并不知道你对面伙伴手中的牌，也并不知道坐在左右两位对手手里的牌。你在作决策时，必须对其他三位手中的牌做一个估计，而没有确切的信息。</p>
+<p>思想：
+对每种牌局计算每个行为的最小最大值，然后选择对所有牌局期望值最高的行为。如果某个行为对所有的牌局都是最优的，则它是最优的。</p>
+<h3 id="作业_1">作业<a class="headerlink" href="#作业_1" title="Permanent link"></a></h3>
+<p><img alt="image-20240106213719254" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106213719254.png" /></p>
+<h3 id="基本搜索算法总结">基本搜索算法总结<a class="headerlink" href="#基本搜索算法总结" title="Permanent link"></a></h3>
+<ul>
+<li>盲目搜索</li>
+</ul>
+<p>广搜、深搜、代价一致、有限深度、迭代加深</p>
+<ul>
+<li>信息搜索</li>
+</ul>
+<p>最佳优先、<span class="arithmatex">\(A^*\)</span>、爬山法、模拟退火、遗传算法</p>
+<ul>
+<li>对抗搜索</li>
+</ul>
+<p>极小极大值算法、$\alpha-\beta $剪枝、概率博弈、不完全信息博弈</p>
+<h2 id="逻辑智能体">逻辑智能体<a class="headerlink" href="#逻辑智能体" title="Permanent link"></a></h2>
+<h3 id="基于知识的智能体">基于知识的智能体<a class="headerlink" href="#基于知识的智能体" title="Permanent link"></a></h3>
+<p>核心构件：知识库</p>
+<p>三元组：（实体entity，实体关系relation，实体entity）</p>
+<p><img alt="image-20240106234644613" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240106234644613.png" /></p>
+<p>m 是 α 的一个模型 表示 语句 α 在模型 m 中为真 也称 m 满足 α</p>
+<p>用 M(α) 表示满足 α 的所有模型</p>
+<p>逻辑推理：用蕴涵推导出结论</p>
+<p>可靠的：只推导出蕴含句的推理算法是可靠的</p>
+<p>完备性：如果推理算法可以生成任意蕴含句，则完备</p>
+<p><img alt="image-20240107113414801" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107113414801.png" /></p>
+<h3 id="命题逻辑">命题逻辑<a class="headerlink" href="#命题逻辑" title="Permanent link"></a></h3>
+<p>原子命题：单个命题词组成，每个命题词代表一个真/假的命题</p>
+<p>文字：原子命题及其否定</p>
+<p>互补文字：一个文字是另一个文字的否定</p>
+<p>子句：文字的析取式<span class="arithmatex">\(\or\)</span></p>
+<p>归并：去除文字的多余副本</p>
+<p><strong>语法：</strong>（按照优先级列出）</p>
+<p>$\neg非 \qquad \and合取 \qquad \or析取 \qquad \Rightarrow蕴含  \qquad \Leftrightarrow当且仅当  $</p>
+<p>命题逻辑的主要研究对象是<strong>公式</strong></p>
+<p>合式公式 (well-formed formula) 简称公式，记作 wff</p>
+<ul>
+<li>一个命题变量 p 是一个 wff</li>
+<li>若 A 是 wff ，则 (¬A) 也是 wff</li>
+<li>若 A, B 是 wff ，则 (A<span class="arithmatex">\(\and\)</span>B), (A$\or $B), (A→B), (A↔B) 也是 wff</li>
+<li>当且仅当有限次使用上述规则得到的才是 wff 。</li>
+</ul>
+<p><strong>区分⇒（蕴含）和 ╞ （蕴涵)</strong></p>
+<p><img alt="image-20240107115325916" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107115325916.png" /></p>
+<h3 id="命题逻辑的推理">命题逻辑的推理<a class="headerlink" href="#命题逻辑的推理" title="Permanent link"></a></h3>
+<p><img alt="image-20240107115519868" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240107115519868.png" /></p>
+<p><strong>有效性 validity 定义： 一个语句是有效的，如果在所有的模型中它都为真。</strong></p>
+<p><strong>可满足性 satisfiability 定义：一个语句是可满足的，如果对于部分模型它是真值。</strong></p>
+<p>α 是有效的 当且仅当¬α不可满足</p>
+<p>α 是可满足的当且仅当¬α不是有效的</p>
+<h3 id="推导和证明">推导和证明<a class="headerlink" href="#推导和证明" title="Permanent link"></a></h3>
+<p>假言推理规则：</p>
+<p>$\frac{\alpha \rightarrow \beta ，\alpha }{\beta } $</p>
+<p>消去合取词：</p>
+<p>$\frac{\alpha \wedge \beta }{\alpha } $</p>
+<p>逻辑系统的单调性：只要在知识库里面发现了合适的前提，就可以应用推理规则，但与知识库的其余内容无关</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../%E9%BB%91%E7%99%BD%E6%A3%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 黑白棋">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                黑白棋
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../%E4%BF%A1%E5%AE%89/ARP%E6%94%BB%E5%87%BB/" class="md-footer__link md-footer__link--next" aria-label="下一页: ARP">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                ARP
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023~2024  Vic/All Rights Reserved.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/Y-vic" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="mailto:<2252262965@qq.com>" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1l172.5 141.6c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16h384c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128c0-35.3 28.7-64 64-64h384c35.3 0 64 28.7 64 64v256c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "navigation.expand", "navigation.indexes", "content.tabs.link", "content.tooltips", "content.code.copy", "content.action.edit", "content.action.view", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7c377c4.min.js"></script>
+      
+        <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js"></script>
+      
+        <script src="../../../ckplayer/js/ckplayer.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.2/dist/add-html-label-6e56ed67.min.js"></script>
+      
+    
+  </body>
+</html>
