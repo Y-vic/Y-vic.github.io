@@ -1374,7 +1374,7 @@
 <p>最近参加了高校电气电子工程创新大赛，我的主要任务是前端设计。因为我之前基本没有接触过前端的知识，所以也是在查阅了很多资料后，算是基本完成了这个任务。可能在代码上不是很精简高效，但我认为应该是比较通俗易懂的，如果您和我一样在前端刚刚入门的阶段，想要自己设计一个可以实时刷新数据的、具有交互性能的前后端项目，这篇文章可能会有帮助。此外，不成熟的地方，欢迎大家批评指正。</p>
 <p>项目地址：<a href="https://github.com/Y-vic/Large-screen-data-visualization">Y-vic/Large-screen-data-visualization (github.com)</a></p>
 <p>前端界面如下，您可以点击<a href="https://y-vic.github.io/client-demo/">这里</a>，在浏览器中查看</p>
-<p><img alt="image-20240331141805747" src="https://img-blog.csdnimg.cn/img_convert/475ef44a7fa50756173e314af9d71bb1.png" /></p>
+<p><img alt="image-20240331141805747" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331141805747.png" /></p>
 <p>实现功能：</p>
 <ul>
 <li>后台服务器基于SSE（Server Sent Event）实时传输更新前端数据</li>
@@ -1498,9 +1498,9 @@
 </code></pre></div></td></tr></table></div>
 <p>运行这段代码，就会生成一个本地服务器，网址为：http://127.0.0.1:5000，您可以在浏览器访问</p>
 <p><strong>运行结果如下：</strong></p>
-<p><img alt="image-20240331144545444" src="https://img-blog.csdnimg.cn/img_convert/38c28ac4b7a0112cf0f21e37695e9d7f.png" /></p>
+<p><img alt="image-20240331144545444" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331144545444.png" /></p>
 <p>当您访问这个网址后：</p>
-<p><img alt="image-20240331144651041" src="https://img-blog.csdnimg.cn/img_convert/aee0fca2dcede517054e0beb6e97139d.png" /></p>
+<p><img alt="image-20240331144651041" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331144651041.png" /></p>
 <h2 id="3前端设计">3、前端设计<a class="headerlink" href="#3前端设计" title="Permanent link"></a></h2>
 <h2 id="31-主要思路">3.1 主要思路<a class="headerlink" href="#31-主要思路" title="Permanent link"></a></h2>
 <p>主体框架我借鉴了B站上的pink老师的思路：<a href="https://www.bilibili.com/video/BV1v7411R7mp/?spm_id_from=333.337.search-card.all.click&amp;vd_source=5b0abc211b780f80a6bdcbea7764a0c5">ECharts数据可视化项目-大屏数据可视化展示-bilibili</a></p>
@@ -1508,12 +1508,12 @@
 <p>对象电网主体部分由32个负载，4个风力发电机组成。因此在客户端实现数据可视化时，我们分别设计了针对所有负载以及风机的实时功率和预测功率对比（左一、左二）。同时为了更好的展示智能体优化效果，我们引入总线路耗散和总稳定节点数两个指标，展示其在优化前后的数据变化（右一、右二）。此外，为了实时分析当前电网连接，我们对区域电网进行抽象，并将得到的拓扑结构予以展示（中间的拓扑）。</p>
 <p>在绘制图表的技术实现上，出于交互性与平台兼容性的考虑，我们主要采用了基于 JavaScript 的开源可视化图表库：Echarts和Vis.js。</p>
 <p>Echarts主要用来绘制左一、左二、右一、右二的四张图表，但是因为我在Echarts的社区里没有找到合适的能用于展示拓扑结构的图表，所以我又引入了Vis.js来绘制这一部分。</p>
-<p><img alt="image-20240331141805747" src="https://img-blog.csdnimg.cn/img_convert/475ef44a7fa50756173e314af9d71bb1.png" /></p>
+<p><img alt="image-20240331141805747" src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331141805747.png" /></p>
 <p>细节上：</p>
 <p>点击左一位置，“负载功率” 表中的数字 “1”，会出现下拉框，您可以在这里选择展示1-32个负载里的任何一个：</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/4afb921611c6bfffa8fd74167fa8e0bf.png" alt="image-20240331152846434" style="zoom:65%;" /></p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331152846434.png" alt="image-20240331152846434" style="zoom:65%;" /></p>
 <p>点击左二位置，“风机功率” 表右侧的<span class="arithmatex">\(W_1,W_2,W_3,W_4\)</span>，即可显示对应的风机数据，以<span class="arithmatex">\(W_3\)</span>为例：</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/4264fb068a6f52aa1835890ee9666698.png" alt="image-20240331153129743" style="zoom:67%;" /></p>
+<p><img src="https://raw.githubusercontent.com/Y-vic/Images/master/img/image-20240331153129743.png" alt="image-20240331153129743" style="zoom:67%;" /></p>
 <h2 id="32-代码设计">3.2 代码设计<a class="headerlink" href="#32-代码设计" title="Permanent link"></a></h2>
 <p>index.html文件主要用于设计主体的框架，所有的数据的导入与更新都放在了index.js文件中。</p>
 <h3 id="321-indexhtml">3.2.1 index.html<a class="headerlink" href="#321-indexhtml" title="Permanent link"></a></h3>
